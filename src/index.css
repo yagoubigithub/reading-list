@@ -38,6 +38,7 @@ body {
   padding: 10px;
   cursor: pointer;
   margin: 10px 0px;
+  text-align: left;
 
 }
 .book-list li:hover{
@@ -48,6 +49,7 @@ text-decoration: line-through
   font-weight: bold;
   color :#fff;
   font-size: 1.2em;
+  
 }
 .book-list .author{
   font-size : 0.9em;
