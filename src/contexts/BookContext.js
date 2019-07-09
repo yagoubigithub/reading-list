@@ -10,16 +10,16 @@ export const BookContextProvider = (props) =>{
         {title  : "The final empire", author : "brandon sanderson", id: 2},
     ]);
 
-    const addBooks = (title,author)=>{
+    const addBook = (title,author)=>{
         setBooks([...books,{title,author,id : uuid() }]);
     }
 
-   const  removeBooks = (id)=>{
+   const  removeBook = (id)=>{
        setBooks (books.filter(book=>book.id !== id));
     }
 
     return(
-        <BookContext.Provider value={{books,addBooks,removeBooks}}>
+        <BookContext.Provider value={{books,addBook,removeBook}}>
             {props.children}
         </BookContext.Provider>
     )
